@@ -86,7 +86,9 @@ const TabContent = ({ activeTab, analysis }) => {
                 <span className="item-title">{text}</span>
               </div>
               {notes && <div className="item-details">{notes}</div>}
+              }
               {status && <div className="experience-notes">Status: {status}</div>}
+              }
             </div>
           );
         })}
@@ -111,6 +113,7 @@ const TabContent = ({ activeTab, analysis }) => {
               <span className="item-text">
                 {text}
                 {status && <span className="skill-status"> ({status})</span>}
+                }
               </span>
             </div>
           );
@@ -163,6 +166,7 @@ const TabContent = ({ activeTab, analysis }) => {
               <span className="certification-text">
                 {text}
                 {status && <span className="certification-status"> ({status})</span>}
+                }
               </span>
             </div>
           );
